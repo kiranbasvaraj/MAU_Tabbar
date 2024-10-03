@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="tab_bar_test.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:tab_bar_test"
+     xmlns:tabs="clr-namespace:tab_bar_test.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="tab_bar_test">
+
+   <TabBar>
+       <Tab Title="Cats">
+           <ShellContent ContentTemplate="{DataTemplate tabs:CatsPage}" />
+       </Tab>
+       <Tab Title="Dogs">
+           <ShellContent ContentTemplate="{DataTemplate tabs:DogsPage}" />
+       </Tab>
+    </TabBar>
+
+</Shell>
+
